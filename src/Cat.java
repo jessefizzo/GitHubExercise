@@ -42,6 +42,16 @@ public class Cat {
 		y = catY + MOUTH_Y;
 		g2.fillOval(x, y, MOUTH_WIDTH, MOUTH_HEIGHT);
 		g2.setColor(Color.black);
+		
+		// Draw some ears
+		g2.setColor(Color.BLACK);
+		int [] xEars = {catX + 10, catX + 25, catX + 50};
+		int [] yEars = {catY + 30, catY - 25, catY + 10};
+		g2.fillPolygon(xEars, yEars, 3);
+		int [] xEars2 = {catX + 50, catX + 70, catX + 90};
+		int [] yEars2 = {catY + 10, catY - 25, catY + 30};
+		g2.fillPolygon(xEars2, yEars2, 3);
+				
 		// Meow text appears below cat head, +10 places below 
 		// so it doesn't overlap the drawing
 		g2.drawString("Meow", catX, catY+HEAD_DIMENSION+10);	
