@@ -51,7 +51,12 @@ public class Cat {
 		int [] xEars2 = {catX + 50, catX + 70, catX + 90};
 		int [] yEars2 = {catY + 10, catY - 25, catY + 30};
 		g2.fillPolygon(xEars2, yEars2, 3);
-				
+		
+		// A tail!
+		int [] xTail = {catX + 90, catX + 120, catX + 150, catX + 120};
+		int [] yTail = {catY + 50, catY  + 40, catY + 20, catY + 60};
+		g2.fillPolygon(xTail, yTail, 4);
+		
 		// Meow text appears below cat head, +10 places below 
 		// so it doesn't overlap the drawing
 		g2.drawString("Meow", catX, catY+HEAD_DIMENSION+10);	
