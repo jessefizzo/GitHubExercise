@@ -32,10 +32,8 @@ public class MyDrawing extends JPanel {
 		// Frame will not display until you set visible true
 		frame.setVisible(true);
 		
-		int i = 0;
-		while(++i > 0) {
-			frame.setVisible(i % 2 == 0);
-		}
+// Removed Joseph's crappy code
+		
 	}
 
 }
